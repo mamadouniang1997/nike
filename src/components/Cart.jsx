@@ -3,10 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   setOpenCart,
    setCloseCart,
-    
-     setRemoveItemFromCart,
+    setRemoveItemFromCart,
      setIncreaseItemQTY,
-      
       setClearCartItems,
        setGetTotals,
        selectTotalAmount,
@@ -15,7 +13,7 @@ import {
        selectCartItems
 } from "../app/CartSlice.js";
 import CartCount from "./cart/CartCount";
-import CartEmpty from "./Cart/CartEmpty.jsx";
+import CartEmpty from "./Cart/CartEmpty";
 import CartItem from "./cart/CartItem";
 
 const Cart = () => {
