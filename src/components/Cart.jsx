@@ -15,7 +15,7 @@ import {
        selectCartItems
 } from "../app/CartSlice.js";
 import CartCount from "./cart/CartCount";
-import CartEmpty from "./cart/CartEmpty";
+import CartEmpty from "./Cart/CartEmpty.jsx";
 import CartItem from "./cart/CartItem";
 
 const Cart = () => {
