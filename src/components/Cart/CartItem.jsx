@@ -1,7 +1,7 @@
 import React from 'react';
 import { MinusIcon, PlusIcon, TrashIcon } from "@heroicons/react/24/outline";
 import { useDispatch } from 'react-redux';
-import { setRemoveItemFromCart } from '../../app/CartSlice.js';
+import { setDecreaseItemQTY, setRemoveItemFromCart } from '../../app/CartSlice.js';
 
 const CartItem = ({ item:{id,title, text, img , color, 
   shadow, price ,cartQuantity }}) => {
@@ -58,8 +58,7 @@ const CartItem = ({ item:{id,title, text, img , color,
   </div>
   <div  className="grid items-center gap-5">
   <div className="grid items-center justify-center">
-    <h1 className="text-lg lg:text-base
-     text-slate-900 font-medium">${ price * cartQuantity} </h1>
+    <h1 className="text-lg lg:text-base text-slate-900 font-medium">${ price * cartQuantity}</h1>
   </div>
     <div className="grid items-center justify-center">
       <button type='button' className="bg-theme-cart 
