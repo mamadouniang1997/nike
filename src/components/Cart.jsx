@@ -12,9 +12,9 @@ import {
        selectCartState,
        selectCartItems
 } from "../app/CartSlice.js";
-import CartCount from "./cart/CartCount.jsx";
+import CartCount from "./Cart/CartCount.jsx";
 import CartEmpty from "./Cart/CartEmpty.jsx";
-import CartItem from "./cart/CartItem.jsx";
+import CartItem from "./Cart/CartItem.jsx";
 
 const Cart = () => {
   const dispatch = useDispatch();
